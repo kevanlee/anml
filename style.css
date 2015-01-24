@@ -13,19 +13,26 @@ This theme is uncopyrighted, free, and offered as is.
 body {
 	background: #fff;
 	font: 20px Hoefler Text, bodyfont, serif;
-	color: #333;
+	color: #000;
         line-height: 30px;
 	margin: 0;
 	}
 
 h1 {font-family: Helvetica, sans-serif; font-size: 1em; color:#333; font-weight:normal;  padding: 20px 0px 0px 0px;}
-h2 {font-family: 'Lato',Helvetica, sans-serif; font-size: 1.5em; color:#333; line-height:26px; font-weight:normal; padding: 5px 0px 10px 0px;}
-h3 {font-family: 'Lato',Helvetica, sans-serif; font-size: 18px; color:#666; line-height: 15px; text-indent: 0px; padding: 10px 0px 0px 0px;}
+h2 {font-family: 'Vollkorn',Helvetica, sans-serif; font-size: 1.5em; color:#333; line-height:1.6; font-weight:normal; padding: 5px 0px 10px 0px;}
+h3 {font-family: 'Vollkorn',Helvetica, sans-serif; font-size: 18px; color:#333; line-height: 1.6; text-indent: 0px; padding: 10px 0px 0px 0px;}
 h4 {font-family: Georgia, "Times New Roman", Times, serif; font-size: 1em; color:#000000;}
 h5 {font-size: 9pt; color:#000000;}
 
 img{border:none;}
-img a{border:none;}
+img.alignnone { border: 1px solid #ddd; padding: 10px; }
+img {
+  height: auto; /* Make sure images are scaled correctly. */
+  max-width: 100%; /* Adhere to container width. */
+}
+a img {
+  border: 0;
+}
 blockquote{border-left:1px solid #A5ABAB; margin:0px; padding:0 12px 0 12px;}
 
 p{line-height: 30px; margin:30px auto; text-indent: 0px;}
@@ -446,7 +453,7 @@ html * {
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap;
-  background: rgba(232, 98, 86, 0.8) url(http://codyhouse.co/demo/back-to-top/img/cd-top-arrow.svg) no-repeat center 50%;
+  background: #f07e00 url(http://codyhouse.co/demo/back-to-top/img/cd-top-arrow.svg) no-repeat center 50%;
   visibility: hidden;
   opacity: 0;
   -webkit-transition: opacity .3s 0s, visibility 0s .3s;
@@ -468,7 +475,7 @@ html * {
   opacity: .5;
 }
 .no-touch .cd-top:hover {
-  background-color: #e86256;
+  background-color: #f07e00;
   opacity: 1;
 }
 @media only screen and (min-width: 768px) {
